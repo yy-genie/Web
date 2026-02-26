@@ -5,28 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .box {
-        width: 370px;
-        height: 600px;
-        border: 2px solid black;
-    }
-    .namebox {
-        text-align: center;
-        background-color: rgba(100, 150, 255, 0.7);
-        margin: 20px;
-    }
+  .box{
+    width: 370px;
+    border: 2px solid black;
+    overflow: hidden;
+  }
+  .img-wrapper{
+    position: relative;
+  }
+  img{
+    width: 100%;
+    display: block;
+  }
+  .namebox{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    bottom: 0px;
+    text-align: center;
+    background: rgba(100,150,255,0.7);
+    padding: 4px 0;
+  }
+  .content{
+    width: 90%;
+    margin: 15px auto;
+  }
+  .namebox h1{
+    margin: 0;
+  }
   </style>
 </head>
+
 <body>
   <div class="box">
   <div>
-    <div>
-      <img src="profile.jpg" alt="Profile Image">
-      <div class="namebox">
-        <h1><b>Name</b></h1>
-      </div>
+    <div class="img-wrapper">
+      <img src="profile.jpg" alt="Profile">
+        <div class="namebox">
+          <h1><b>Name</b></h1>
+        </div>
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci unde officiis ad nostrum. Laboriosam mollitia similique provident fuga tenetur saepe sit, amet eaque neque eius quaerat expedita ea illum veniam.</p>
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci unde officiis ad nostrum. Laboriosam mollitia similique provident fuga tenetur saepe sit, amet eaque neque eius quaerat expedita ea illum veniam.
+      </p>
+  </div>
   </div>
   </div>
 </body>
